@@ -28,6 +28,8 @@ Value of Counter            Subset
 		int n=3;
 		List<Integer> list = new ArrayList<>();
 		subsequences(0,arr,list,n);
+		//Time O(n^2) : as max print loop (n)* max recursion call (n)
+		//Space O(n): as max size of list will be n
 		System.out.println();
 		list = new ArrayList<>();
 		subsequencesReverse(0,arr,list,n);
