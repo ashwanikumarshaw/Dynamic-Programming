@@ -50,10 +50,10 @@ public class FrogJump {
 	private static int memo_fun(int n, int[] h, int[] dp) {
 		if(n==0) return 0;
 		if(dp[n]!=-1)return dp[n];
-		int fs=recu_fun(n-1,h)+Math.abs(h[n]-h[n-1]);
+		int fs=memo_fun(n-1,h,dp)+Math.abs(h[n]-h[n-1]);
 		int ss=Integer.MAX_VALUE;
 		if(n>1)
-			ss=recu_fun(n-2,h)+Math.abs(h[n]-h[n-2]);
+			ss=memo_fun(n-2,h,dp)+Math.abs(h[n]-h[n-2]);
 		return dp[n]=Math.min(fs, ss);
 		//TC O(n)
 		//SC O(n+n)
