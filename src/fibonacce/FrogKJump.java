@@ -5,8 +5,7 @@ public class FrogKJump {
 	public static void main(String[] args) {
 		int H[] = { 10, 2, 20, 40, 100, 10 };
 		int n = H.length - 1;
-		int k = 2
-				;
+		int k = 2;
 		int dp[] = new int[H.length];
 		for (int i = 0; i <= n; i++)
 			dp[i] = -1;
