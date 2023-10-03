@@ -1,4 +1,4 @@
-package fibonacce;
+package subsequences;
 
 import java.util.Arrays;
 
