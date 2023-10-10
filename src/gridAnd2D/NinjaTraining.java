@@ -1,4 +1,4 @@
-package twoD;
+package gridAnd2D;
 
 import java.util.Arrays;
 
